@@ -1,0 +1,22 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:CcgSys40">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.DataGrid.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <Style TargetType="{x:Type local:AppDataGrid}" BasedOn="{StaticResource MaterialDesignDataGrid}">
+        <Setter Property="GridLinesVisibility" Value="All"></Setter>
+        <Setter Property="HorizontalGridLinesBrush" Value="Red"></Setter>
+        <Setter Property="VerticalGridLinesBrush" Value="Red"></Setter>
+        <Setter Property="BorderBrush" Value="Red"></Setter>
+        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="ColumnHeaderStyle">
+            <Setter.Value>
+                <Style BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}" TargetType="DataGridColumnHeader">
+                    
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
